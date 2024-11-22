@@ -1,0 +1,29 @@
+set_route:
+  name: Set Route
+  description: Dynamically set HVV route destination and departure time
+  fields:
+    entity_id:
+      name: Entity ID
+      description: The entity ID of the HVV route sensor
+      required: true
+      selector:
+        entity:
+          domain: sensor
+    destination_station:
+      name: Destination Station
+      description: Name of the destination station
+      required: true
+      selector:
+        text:
+    destination_city:
+      name: Destination City
+      description: City of the destination station
+      required: true
+      selector:
+        text:
+    departure_time:
+      name: Departure Time
+      description: Departure time (HH:MM) or 'currenttime'
+      required: false
+      selector:
+        text:
