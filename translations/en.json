@@ -1,0 +1,27 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "GTI Authentication",
+                "description": "Enter your GTI API credentials",
+                "data": {
+                    "username": "GTI Username",
+                    "password": "GTI Password"
+                }
+            },
+            "home_location": {
+                "title": "Home Location Setup",
+                "description": "Enter your home station details",
+                "data": {
+                    "home_station": "Home Station",
+                    "home_city": "Home City"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Failed to connect to GTI API",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        }
+    }
+}
